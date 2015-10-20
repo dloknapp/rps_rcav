@@ -8,12 +8,15 @@ class MovesController < ApplicationController
 
     if @computer_move == "Rock"
       @outcome = "You tied!"
+      @formatting = "warning"
 
     elsif @computer_move == "Paper"
       @outcome = "You lost!"
+      @formatting = "danger"
 
     elsif @computer_move == "Scissors"
       @outcome = "You won!"
+      @formatting = "success"
 
     end
 
@@ -27,12 +30,15 @@ class MovesController < ApplicationController
 
     if @computer_move == "Rock"
       @outcome = "You won!"
+      @formatting = "success"
 
     elsif @computer_move == "Paper"
       @outcome = "You tied!"
+      @formatting = "warning"
 
     elsif @computer_move == "Scissors"
       @outcome = "You lost!"
+      @formatting = "danger"
 
     end
 
@@ -46,12 +52,15 @@ class MovesController < ApplicationController
 
     if @computer_move == "Rock"
       @outcome = "You lost!"
+      @formatting = "danger"
 
     elsif @computer_move == "Paper"
       @outcome = "You won!"
+      @formatting = "success"
 
     elsif @computer_move == "Scissors"
       @outcome = "You tied!"
+      @formatting = "warning"
 
     end
 

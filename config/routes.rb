@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get("/", { :controller => "moves" , :action => "rock"})
+
   get("/rock", { :controller => "moves" , :action => "rock"})
   get("/paper", { :controller => "moves" , :action => "paper"})
   get("/scissors", { :controller => "moves" , :action => "scissors"})
